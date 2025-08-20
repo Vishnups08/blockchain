@@ -55,11 +55,11 @@ download_files() {
     
     # List of files to download (you'll need to update these URLs with your actual repository)
     FILES=(
-        "BlockchainWallet.java"
-        "SimpleBlockchain.java" 
-        "TransactionVerification.java"
-        "SHA256Example.java"
-        "RSADemo.java"
+        "five.java"
+        "three.java" 
+        "four.java"
+        "two.java"
+        "one.java"
     )
     
     for file in "${FILES[@]}"; do
@@ -94,11 +94,11 @@ run_examples() {
     
     # Run each program with a delay
     PROGRAMS=(
-        "BlockchainWallet"
-        "SimpleBlockchain"
-        "TransactionVerification" 
-        "SHA256Example"
-        "RSADemo"
+        "five"
+        "three"
+        "four" 
+        "two"
+        "one"
     )
     
     for program in "${PROGRAMS[@]}"; do

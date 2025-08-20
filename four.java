@@ -1,7 +1,7 @@
 import java.security.*;
 import java.util.Base64;
 
-public class TransactionVerification {
+public class four {
     public static void main(String[] args) throws Exception {
         KeyPairGenerator keyGen = KeyPairGenerator.getInstance("RSA");
         keyGen.initialize(2048);
@@ -25,4 +25,4 @@ public class TransactionVerification {
         boolean isVerified = verifySign.verify(signatureBytes);
         System.out.println("\nIs Signature Verified? " + isVerified);
     }
-}
+} 

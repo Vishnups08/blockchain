@@ -5,7 +5,7 @@ import java.security.PublicKey;
 import javax.crypto.Cipher;
 import java.util.Base64;
 
-public class RSADemo {
+public class one {
 
     public static KeyPair generateKeyPair() throws Exception {
         KeyPairGenerator generator = KeyPairGenerator.getInstance("RSA");
@@ -41,4 +41,4 @@ public class RSADemo {
         String decrypted = decrypt(encrypted, privateKey);
         System.out.println("Decrypted Message: " + decrypted);
     }
-}
+} 

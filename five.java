@@ -2,7 +2,7 @@ import java.security.*;
 import java.security.spec.ECGenParameterSpec;
 import java.util.Base64;
 
-public class BlockchainWallet {
+public class five {
     public static void main(String[] args) {
         try {
             int aliceBalance = 100, bobBalance = 50;
@@ -46,4 +46,4 @@ public class BlockchainWallet {
             System.err.println("Error: " + e.getMessage());
         }
     }
-}
+} 

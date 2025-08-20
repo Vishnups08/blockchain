@@ -1,7 +1,7 @@
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-public class SHA256Example {
+public class two {
     public static String getSHA256Hash(String input) {
         try {
             MessageDigest md = MessageDigest.getInstance("SHA-256");
@@ -25,4 +25,4 @@ public class SHA256Example {
         System.out.println("Original: " + original);
         System.out.println("SHA-256 Hash: " + hash);
     }
-}
+} 

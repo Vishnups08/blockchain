@@ -22,7 +22,7 @@ echo.
 
 REM Download Java files (you'll need to update these URLs)
 echo [INFO] Checking for Java blockchain examples...
-set FILES=BlockchainWallet.java SimpleBlockchain.java TransactionVerification.java SHA256Example.java RSADemo.java
+set FILES=five.java three.java four.java two.java one.java
 
 for %%f in (%FILES%) do (
     if exist "%%f" (
@@ -53,37 +53,37 @@ echo ==============================
 
 REM Run each program
 echo.
-echo 🔹 Running BlockchainWallet...
+echo 🔹 Running five (BlockchainWallet)...
 echo ----------------------------------------
-java BlockchainWallet
-echo ----------------------------------------
-timeout /t 2 >nul
-
-echo.
-echo 🔹 Running SimpleBlockchain...
-echo ----------------------------------------
-java SimpleBlockchain
+java five
 echo ----------------------------------------
 timeout /t 2 >nul
 
 echo.
-echo 🔹 Running TransactionVerification...
+echo 🔹 Running three (SimpleBlockchain)...
 echo ----------------------------------------
-java TransactionVerification
-echo ----------------------------------------
-timeout /t 2 >nul
-
-echo.
-echo 🔹 Running SHA256Example...
-echo ----------------------------------------
-java SHA256Example
+java three
 echo ----------------------------------------
 timeout /t 2 >nul
 
 echo.
-echo 🔹 Running RSADemo...
+echo 🔹 Running four (TransactionVerification)...
 echo ----------------------------------------
-java RSADemo
+java four
+echo ----------------------------------------
+timeout /t 2 >nul
+
+echo.
+echo 🔹 Running two (SHA256Example)...
+echo ----------------------------------------
+java two
+echo ----------------------------------------
+timeout /t 2 >nul
+
+echo.
+echo 🔹 Running one (RSADemo)...
+echo ----------------------------------------
+java one
 echo ----------------------------------------
 
 echo.

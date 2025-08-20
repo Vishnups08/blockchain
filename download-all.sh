@@ -16,11 +16,11 @@ echo ""
 
 # List of files to download
 FILES=(
-    "BlockchainWallet.java"
-    "SimpleBlockchain.java"
-    "TransactionVerification.java"
-    "SHA256Example.java"
-    "RSADemo.java"
+    "five.java"
+    "three.java"
+    "four.java"
+    "two.java"
+    "one.java"
     "README.md"
     "Makefile"
     "run.sh"

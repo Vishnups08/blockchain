@@ -50,7 +50,7 @@ class Block {
     }
 }
 
-public class SimpleBlockchain {
+public class three {
     public static ArrayList<Block> blockchain = new ArrayList<>();
     public static int difficulty = 4;
 

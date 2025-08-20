@@ -6,7 +6,7 @@ JAVAC = javac
 JAVA = java
 
 # Source files
-SOURCES = BlockchainWallet.java SimpleBlockchain.java TransactionVerification.java SHA256Example.java RSADemo.java
+SOURCES = five.java three.java four.java two.java one.java
 
 # Class files (will be generated)
 CLASSES = $(SOURCES:.java=.class)
@@ -37,37 +37,37 @@ run: compile
 # Run individual programs
 run-wallet: compile
 	@echo ""
-	@echo "🔹 Running BlockchainWallet..."
+	@echo "🔹 Running five (BlockchainWallet)..."
 	@echo "----------------------------------------"
-	@$(JAVA) BlockchainWallet
+	@$(JAVA) five
 	@echo "----------------------------------------"
 
 run-blockchain: compile
 	@echo ""
-	@echo "🔹 Running SimpleBlockchain..."
+	@echo "🔹 Running three (SimpleBlockchain)..."
 	@echo "----------------------------------------"
-	@$(JAVA) SimpleBlockchain
+	@$(JAVA) three
 	@echo "----------------------------------------"
 
 run-transaction: compile
 	@echo ""
-	@echo "🔹 Running TransactionVerification..."
+	@echo "🔹 Running four (TransactionVerification)..."
 	@echo "----------------------------------------"
-	@$(JAVA) TransactionVerification
+	@$(JAVA) four
 	@echo "----------------------------------------"
 
 run-sha256: compile
 	@echo ""
-	@echo "🔹 Running SHA256Example..."
+	@echo "🔹 Running two (SHA256Example)..."
 	@echo "----------------------------------------"
-	@$(JAVA) SHA256Example
+	@$(JAVA) two
 	@echo "----------------------------------------"
 
 run-rsa: compile
 	@echo ""
-	@echo "🔹 Running RSADemo..."
+	@echo "🔹 Running one (RSADemo)..."
 	@echo "----------------------------------------"
-	@$(JAVA) RSADemo
+	@$(JAVA) one
 	@echo "----------------------------------------"
 
 # Clean up generated files
@@ -92,11 +92,11 @@ help:
 	@echo ""
 	@echo "  make compile     - Compile all Java files"
 	@echo "  make run         - Compile and run all examples"
-	@echo "  make run-wallet  - Run BlockchainWallet example"
-	@echo "  make run-blockchain - Run SimpleBlockchain example"
-	@echo "  make run-transaction - Run TransactionVerification example"
-	@echo "  make run-sha256  - Run SHA256Example"
-	@echo "  make run-rsa     - Run RSADemo"
+	@echo "  make run-wallet  - Run five (BlockchainWallet) example"
+	@echo "  make run-blockchain - Run three (SimpleBlockchain) example"
+	@echo "  make run-transaction - Run four (TransactionVerification) example"
+	@echo "  make run-sha256  - Run two (SHA256Example)"
+	@echo "  make run-rsa     - Run one (RSADemo)"
 	@echo "  make clean       - Remove all generated .class files"
 	@echo "  make check-java  - Check if Java is installed"
 	@echo "  make help        - Show this help message"
